@@ -24,8 +24,8 @@ st.markdown("""
 # Tombol prediksi
 if st.button("Prediksi Spesies"):
     # Memuat model dan scaler
-    rf_model = joblib.load('random forest/rf_model_scaler.pkl')
-    scaler = joblib.load('random forest/scaler.pkl')
+    rf_model = joblib.load('Supervised Learning/random forest/rf_model_scaler.pkl')
+    scaler = joblib.load('Supervised Learning/random forest/scaler.pkl')
 
     # Scaling data input
     scaled_input = scaler.transform([[length, weight, ratio]])
